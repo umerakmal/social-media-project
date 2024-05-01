@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Bee - Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/styles/signup.css">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-11 col-md-8 col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="text-center">Sign Up</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="signup-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name:</label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName" required>
+                                    <small id="firstName-error" class="form-text text-danger"></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name:</label>
+                                    <input type="text" class="form-control" id="lastName" name="lastName" required>
+                                    <small id="lastName-error" class="form-text text-danger"></small>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <small id="email-error" class="form-text text-danger"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Gender:</label>
+                                <select class="form-control" id="gender" name="gender">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <small id="gender-error" class="form-text text-danger"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="dateOfBirth">Date of Birth:</label>
+                                <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" required>
+                                <small id="dateOfBirth-error" class="form-text text-danger"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                                <small id="password-error" class="form-text text-danger"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-password">Confirm Password:</label>
+                                <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
+                                <small id="confirm-password-error" class="form-text text-danger"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country:</label>
+                                <select class="form-control" id="country" name="country">
+                                    <option value="USA">USA</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="UK">UK</option>
+                                    <option value="Australia">Australia</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/signup.js"></script>
+</body>
+</html>
